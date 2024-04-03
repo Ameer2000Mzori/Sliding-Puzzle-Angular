@@ -1,7 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+
 .puzzle-wrapper {
   height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: #c4e4ff;
+
+  &.title-wrap {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 100px;
+  }
 }
