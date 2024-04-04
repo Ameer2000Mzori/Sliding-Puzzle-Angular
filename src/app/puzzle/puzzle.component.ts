@@ -13,14 +13,19 @@ export class PuzzleComponent implements OnInit {
   board: number[][] = [];
   emptyRow: number = 0;
   emptyCol: number = 0;
-  gameOver: boolean = false;
+  gameOver: boolean = true;
   move: number = 0;
-  time: number = 0;
   date = new Date();
 
   ngOnInit(): void {
     this.shuffleBoard();
     console.log(this.date);
+  }
+
+  playAgain() {
+    this.shuffleBoard();
+    this.gameOver = false;
+    this.move = 0;
   }
 
   shuffleBoard(): void {

@@ -21,4 +21,11 @@
     <p style="width: 70%">Moves:{{ move }}</p>
     <p style="width: 70%">{{ date | date }}</p>
   </div>
+
+  <div>
+    @if(gameOver){
+    <p style="width: 100%">you finished the game good job</p>
+    <button (click)="playAgain()">play again</button>
+    }
+  </div>
 </div>
