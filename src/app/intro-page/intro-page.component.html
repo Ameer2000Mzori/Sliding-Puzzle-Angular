@@ -5,21 +5,13 @@
 
   <nav>
     <ul>
+      @for ( item of navData; track item.id){
       <li>
-        <a class="sharedTitles" routerLink="/game">{{
-          "start game " | uppercase
-        }}</a>
+        <a class="sharedTitles" routerLink="{{ item.url }}">{{ item.title }}</a>
       </li>
-      <li>
-        <a class="sharedTitles" routerLink="/scores">{{
-          "scores" | uppercase
-        }}</a>
-      </li>
-      <li>
-        <a class="sharedTitles" routerLink="/about">{{
-          "About " | uppercase
-        }}</a>
-      </li>
+      }@empty {
+      <p>There are no items.</p>
+      }
     </ul>
   </nav>
 </div>

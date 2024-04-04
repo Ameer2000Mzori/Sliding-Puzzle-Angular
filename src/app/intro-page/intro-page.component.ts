@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { navListData } from './NavListData';
 @Component({
   selector: 'app-intro-page',
   standalone: true,
@@ -10,4 +11,6 @@ import { RouterLink } from '@angular/router';
 })
 export class IntroPageComponent {
   title = 'sliding-puzzle';
+
+  navData = navListData;
 }
