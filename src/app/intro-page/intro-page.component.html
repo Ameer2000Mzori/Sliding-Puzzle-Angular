@@ -6,13 +6,15 @@
   <nav>
     <ul>
       <li>
-        <a routerLink="/game">Puzzle</a>
+        <a class="nav-text" routerLink="/game">{{
+          "start game " | uppercase
+        }}</a>
       </li>
       <li>
-        <a routerLink="/about">About</a>
+        <a class="nav-text" routerLink="/scores">{{ "scores" | uppercase }}</a>
       </li>
       <li>
-        <a routerLink="/scores">Contact</a>
+        <a class="nav-text" routerLink="/about">{{ "About " | uppercase }}</a>
       </li>
     </ul>
   </nav>

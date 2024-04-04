@@ -8,10 +8,9 @@ describe('NavUtilityComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavUtilityComponent]
-    })
-    .compileComponents();
-    
+      imports: [NavUtilityComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(NavUtilityComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

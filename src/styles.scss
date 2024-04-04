@@ -2,6 +2,11 @@
 html,
 body {
   cursor: url("./assets//custom-cursor.png"), auto;
+
   margin: 0;
   padding: 0;
+
+  &:hover {
+    cursor: url("./assets//custom-hover-cursor.png"), auto;
+  }
 }
