@@ -1,1 +1,24 @@
-<h1>puzzle component works!</h1>
+<app-nav-utility></app-nav-utility>
+<div class="puzzle-wrapper">
+  <div class="title-wrap">
+    <h1 class="title-text">GAME PAGE</h1>
+  </div>
+  <div class="puzzle-wrap">
+    <div class="puzzle">
+      @for(row of board; track row; let i = $index){
+      <div class="row">
+        @for(tile of row; track tile; let j = $index){
+
+        <div class="tile" (click)="moveTile(i, j)">
+          {{ tile === 0 ? "" : tile }}
+        </div>
+        }
+      </div>
+      }
+    </div>
+  </div>
+  <div style="width: 300px">
+    <p style="width: 70%">Moves:{{ move }}</p>
+    <p style="width: 70%">{{ date | date }}</p>
+  </div>
+</div>
