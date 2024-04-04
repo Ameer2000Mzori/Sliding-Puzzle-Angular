@@ -19,14 +19,21 @@
     </div>
   </div>
   <div style="width: 300px">
-    <p style="width: 70%">Moves:{{ move }}</p>
+    <p style="width: 70%">Moves : {{ move }}</p>
+    <p style="width: 70%">seconds : {{ counter }}</p>
     <p style="width: 70%">{{ date | date }}</p>
   </div>
 
   <div>
     @if(gameOver){
-    <p style="width: 100%">you finished the game good job</p>
-    <button (click)="playAgain()">play again</button>
+    <div class="finished-Game-Wrapper" style="gap: 10px">
+      <a class="sharedTitles">you finished the game good job</a>
+      <h6>you finished game with {{ move }} and {{ counter }} seconds!</h6>
+      <a class="sharedTitles" (click)="playAgain()">play again</a>
+      <a class="sharedTitles" routerLink="/intro">
+        {{ "home page ?" | uppercase }}</a
+      >
+    </div>
     }
   </div>
 </div>

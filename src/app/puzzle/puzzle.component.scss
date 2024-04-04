@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   height: 500px;
-  width: 500px;
+  width: 360px;
 
   .puzzle {
     display: flex;
@@ -32,7 +32,6 @@
   .tile.tile-1 {
     background-image: url("../../assets/background-smile.png");
     background-position: 0 0;
-    z-index: 10;
   }
 
   .tile.tile-2 {
@@ -114,5 +113,27 @@
     font-size: 24px;
     text-align: center;
     margin-top: 20px;
+  }
+}
+
+// finished game wrapper
+
+.finished-Game-Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+  width: 560px;
+  position: fixed;
+  background-color: rgb(243, 222, 37);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+
+  h6 {
+    font-size: 25px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
 }

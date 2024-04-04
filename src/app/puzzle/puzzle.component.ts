@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavUtilityComponent } from '../shared/nav-utility/nav-utility.component';
-
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-puzzle',
   standalone: true,
-  imports: [CommonModule, NavUtilityComponent],
+  imports: [CommonModule, NavUtilityComponent, RouterLink],
   templateUrl: './puzzle.component.html',
   styleUrl: './puzzle.component.scss',
 })
@@ -16,16 +16,22 @@ export class PuzzleComponent implements OnInit {
   gameOver: boolean = true;
   move: number = 0;
   date = new Date();
+  counter: number = 0;
+  timerRef: any;
 
   ngOnInit(): void {
     this.shuffleBoard();
     console.log(this.date);
+    this.timerRef = setInterval(() => {
+      this.counter++;
+    }, 1000);
   }
 
   playAgain() {
     this.shuffleBoard();
     this.gameOver = false;
     this.move = 0;
+    this.counter = 0;
   }
 
   shuffleBoard(): void {
@@ -75,6 +81,7 @@ export class PuzzleComponent implements OnInit {
         count++;
       }
     }
+    clearInterval(this.timerRef);
     this.gameOver = true;
   }
 }

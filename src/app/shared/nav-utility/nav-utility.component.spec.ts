@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { NavUtilityComponent } from './nav-utility.component';
 
 describe('NavUtilityComponent', () => {
