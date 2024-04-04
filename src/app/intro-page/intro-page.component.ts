@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { PuzzleComponent } from '../puzzle/puzzle.component';
-
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-intro-page',
   standalone: true,
-  imports: [PuzzleComponent],
+  imports: [RouterLink, RouterLinkActive, RouterOutlet],
   templateUrl: './intro-page.component.html',
   styleUrl: './intro-page.component.scss',
 })
