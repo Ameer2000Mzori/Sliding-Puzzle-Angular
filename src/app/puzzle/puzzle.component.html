@@ -9,8 +9,9 @@
       <div class="row">
         @for(tile of row; track tile; let j = $index){
 
-        <div class="tile" (click)="moveTile(i, j)">
+        <div class="tile" [class]="'tile-' + tile" (click)="moveTile(i, j)">
           {{ tile === 0 ? "" : tile }}
+          <!-- <div></div> -->
         </div>
         }
       </div>
@@ -29,3 +30,10 @@
     }
   </div>
 </div>
+
+<audio
+  class="audio-El"
+  src="../assets/background-theme.m4a"
+  controls
+  autoplay
+></audio>

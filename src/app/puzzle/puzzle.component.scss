@@ -16,7 +16,6 @@
   .row {
     display: flex;
   }
-
   .tile {
     width: 100px;
     height: 100px;
@@ -24,7 +23,91 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    color: red;
+    display: block;
+  }
+
+  .tile.tile-1 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: 0 0;
+    z-index: 10;
+  }
+
+  .tile.tile-2 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: -100px 0; /* Top center */
+  }
+
+  .tile.tile-3 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: -200px 0; /* Top right */
+  }
+
+  .tile.tile-4 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: -300px 0; /* Top rightmost */
+  }
+
+  .tile.tile-5 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: 0 -100px; /* Second row left */
+  }
+
+  .tile.tile-6 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: -100px -100px; /* Second row center */
+  }
+
+  .tile.tile-7 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: -200px -100px; /* Second row right */
+  }
+
+  .tile.tile-8 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: -300px -100px; /* Second row rightmost */
+  }
+
+  .tile.tile-9 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: 0 -200px; /* Third row left */
+  }
+
+  .tile.tile-10 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: -100px -200px; /* Third row center */
+  }
+
+  .tile.tile-11 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: -200px -200px; /* Third row right */
+  }
+
+  .tile.tile-12 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: -300px -200px; /* Third row rightmost */
+  }
+
+  .tile.tile-13 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: 0 -300px; /* Bottom row left */
+  }
+
+  .tile.tile-14 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: -100px -300px; /* Bottom row center */
+  }
+
+  .tile.tile-15 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: -200px -300px; /* Bottom row right */
+  }
+
+  .tile.tile-16 {
+    background-image: url("../../assets/background-smile.png");
+    background-position: -300px -300px; /* Bottom row rightmost */
   }
 
   .message {
