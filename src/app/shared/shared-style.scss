@@ -149,3 +149,20 @@ nav {
     cursor: url("../../assets/custom-hover-cursor.png"), auto;
   }
 }
+
+p,
+ol {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 25px;
+  margin: 5px;
+  width: 50%;
+  text-decoration: none;
+  text-shadow: black 1px 1px;
+  text-align: start;
+}
+
+li {
+}
