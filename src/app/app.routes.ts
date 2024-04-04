@@ -10,5 +10,6 @@ export const routes: Routes = [
   { path: 'game', component: PuzzleComponent },
   { path: 'about', component: AboutPageComponent },
   { path: 'scores', component: ScoresPageComponent },
+
   { path: '**', redirectTo: '/intro', pathMatch: 'full' },
 ];
