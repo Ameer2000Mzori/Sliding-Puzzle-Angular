@@ -1,5 +1,16 @@
-.titlesAndTexts {
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+
+.title-wrapper {
   width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sharedTitles {
   font-family: "Bungee Spice", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -9,4 +20,11 @@
   text-decoration: none;
   text-shadow: black 1px 1px;
   transition: all 300ms ease-in-out;
+
+  &:hover {
+    text-decoration: underline;
+    color: #ff9000;
+    font-size: 30px;
+    cursor: url("../../assets/custom-hover-cursor.png"), auto;
+  }
 }

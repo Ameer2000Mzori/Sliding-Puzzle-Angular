@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
-
+@import url("../shared/shared-style.scss");
 // custom style variables
 $backgroundColor: linear-gradient(
   to left top,
@@ -32,7 +32,6 @@ $backgroundColor: linear-gradient(
     font-size: 48px;
     line-height: 25px;
     text-shadow: black 3px 3px;
-    text-decoration: underline;
 
     @media (max-width: 768px) {
       font-size: 32px;
@@ -59,26 +58,6 @@ nav {
     list-style: none;
     li {
       padding: 1rem;
-
-      .nav-text {
-        width: 100%;
-        font-family: "Bungee Spice", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 25px;
-        line-height: 15px;
-        margin: 5px;
-        text-decoration: none;
-        text-shadow: black 1px 1px;
-        transition: all 300ms ease-in-out;
-
-        &:hover {
-          text-decoration: underline;
-          color: #ff9000;
-          font-size: 30px;
-          cursor: url("../../assets/custom-hover-cursor.png"), auto;
-        }
-      }
     }
   }
 }
