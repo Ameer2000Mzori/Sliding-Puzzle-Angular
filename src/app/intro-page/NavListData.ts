@@ -4,7 +4,6 @@ interface NavListItem {
   id: number;
 }
 
-// Define array of navList objects
 export const navListData: NavListItem[] = [
   {
     title: 'start game',
