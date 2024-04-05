@@ -13,7 +13,7 @@ export class PuzzleComponent implements OnInit {
   board: number[][] = [];
   emptyRow: number = 0;
   emptyCol: number = 0;
-  gameOver: boolean = true;
+  gameOver: boolean = false;
   move: number = 0;
   date = new Date();
   counter: number = 0;

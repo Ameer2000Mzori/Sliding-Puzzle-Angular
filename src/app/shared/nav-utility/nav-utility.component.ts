@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './nav-utility.component.scss',
 })
 export class NavUtilityComponent {
-  text = 'go back';
+  text = 'back';
 }

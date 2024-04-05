@@ -1,4 +1,5 @@
 <app-nav-utility></app-nav-utility>
+@defer {
 <div class="puzzle-wrapper">
   <div class="title-wrap">
     <h1 class="title-text">GAME PAGE</h1>
@@ -11,7 +12,6 @@
 
         <div class="tile" [class]="'tile-' + tile" (click)="moveTile(i, j)">
           {{ tile === 0 ? "" : tile }}
-          <!-- <div></div> -->
         </div>
         }
       </div>
@@ -27,8 +27,10 @@
   <div>
     @if(gameOver){
     <div class="finished-Game-Wrapper" style="gap: 10px">
-      <a class="sharedTitles">you finished the game good job</a>
-      <h6>you finished game with {{ move }} and {{ counter }} seconds!</h6>
+      <a>you finished the game good job</a>
+      <h6>
+        you finished game with {{ move }} moved and {{ counter }} seconds!
+      </h6>
       <a class="sharedTitles" (click)="playAgain()">play again</a>
       <a class="sharedTitles" routerLink="/intro">
         {{ "home page ?" | uppercase }}</a
@@ -44,3 +46,5 @@
   controls
   autoplay
 ></audio>
+
+}
