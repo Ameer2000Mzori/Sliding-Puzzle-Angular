@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ScoresPageComponent } from './scores-page.component';
 
 describe('ScoresPageComponent', () => {
@@ -8,10 +7,9 @@ describe('ScoresPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ScoresPageComponent]
-    })
-    .compileComponents();
-    
+      imports: [ScoresPageComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ScoresPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

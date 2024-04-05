@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavUtilityComponent } from '../shared/nav-utility/nav-utility.component';
 import { RouterLink } from '@angular/router';
+import { DataService } from '../services/DataService';
 @Component({
   selector: 'app-puzzle',
   standalone: true,
@@ -21,7 +22,6 @@ export class PuzzleComponent implements OnInit {
 
   ngOnInit(): void {
     this.shuffleBoard();
-    console.log(this.date);
     this.timerRef = setInterval(() => {
       this.counter++;
     }, 1000);
@@ -63,7 +63,6 @@ export class PuzzleComponent implements OnInit {
       this.board[row][col] = 0;
       this.emptyRow = row;
       this.emptyCol = col;
-      console.log('moves', this.move);
       this.checkWin();
     }
   }
@@ -83,11 +82,24 @@ export class PuzzleComponent implements OnInit {
     }
     clearInterval(this.timerRef);
     this.gameOver = true;
+    this.updateState();
   }
 
   // audio functions
   isAudio: boolean = false;
   openAudio() {
     this.isAudio = !this.isAudio;
+  }
+
+  // save data to RXjs
+  constructor(private dataService: DataService) {}
+
+  updateState() {
+    const newState = {
+      seconds: this.counter,
+      moves: this.move,
+      date: new Date(),
+    };
+    this.dataService.updateState(newState);
   }
 }

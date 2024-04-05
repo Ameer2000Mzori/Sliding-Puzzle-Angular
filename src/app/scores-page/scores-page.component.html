@@ -1,6 +1,13 @@
 <app-nav-utility></app-nav-utility>
 <div class="puzzle-wrapper">
   <div class="title-wrap">
-    <h1 class="title-text">scores</h1>
+    <h1 class="title-text">score</h1>
+  </div>
+  <div>
+    @defer{
+    <p>Seconds: {{ state.seconds }}</p>
+    <p>Moves: {{ state.moves }}</p>
+    <p>Date: {{ state.date }}</p>
+    }
   </div>
 </div>

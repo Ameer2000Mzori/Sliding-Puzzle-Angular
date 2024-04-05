@@ -11,7 +11,7 @@ export const navListData: NavListItem[] = [
     id: 1,
   },
   {
-    title: 'scores',
+    title: 'Last Score',
     url: '/scores',
     id: 2,
   },
