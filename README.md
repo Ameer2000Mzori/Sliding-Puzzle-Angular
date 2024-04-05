@@ -17,7 +17,7 @@
 
 # 📖 About This Project <a name="about-project"></a>
 
-> This project is created with Angular, the newest version, and SCSS. I have implemented the newest features like @if and @for, and also used some other features like pipes and reusable components. This project is also an assignment for my job interview challenge. It is well-styled and managed, and working as expected with routing—you are able to visit different pages without having to worry about loading the page again. I have implemented RxJS, where Rx is similar to React Redux Toolkit, allowing you to manage your data very easily and maintain the code cleaner and more efficient.
+> This project is built using Angular, leveraging the latest version along with SCSS for styling. It incorporates advanced features such as @if and @for directives, along with other functionalities like pipes and reusable components. Designed as part of a job interview challenge, it showcases meticulous styling and organization. The seamless routing ensures smooth navigation between pages without unnecessary page reloads. Utilizing RxJS, the project employs reactive programming akin to React Redux Toolkit, streamlining data management for enhanced code cleanliness and efficiency. Moreover, the implementation of @defer optimizes page loading, embracing lazy loading for improved performance.
 
 # Sample Of Website <a name="Sample-Of-Website"></a>
 
@@ -104,7 +104,7 @@ _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/
 
 # ABOUT THIS PROJECT
 
-This project is created with Angular, the newest version, and SCSS. I have implemented the newest features like @if and @for, and also used some other features like pipes and reusable components. This project is also an assignment for my job interview challenge. It is well-styled and managed, and working as expected with routing—you are able to visit different pages without having to worry about loading the page again. I have implemented RxJS, where Rx is similar to React Redux Toolkit, allowing you to manage your data very easily and maintain the code cleaner and more efficient.
+This project is built using Angular, leveraging the latest version along with SCSS for styling. It incorporates advanced features such as @if and @for directives, along with other functionalities like pipes and reusable components. Designed as part of a job interview challenge, it showcases meticulous styling and organization. The seamless routing ensures smooth navigation between pages without unnecessary page reloads. Utilizing RxJS, the project employs reactive programming akin to React Redux Toolkit, streamlining data management for enhanced code cleanliness and efficiency. Moreover, the implementation of @defer optimizes page loading, embracing lazy loading for improved performance.
 
 # SlidingPuzzle
 
