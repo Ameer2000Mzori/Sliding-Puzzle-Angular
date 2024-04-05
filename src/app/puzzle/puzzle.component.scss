@@ -139,3 +139,22 @@
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
 }
+
+.audio-wrapper {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+}
+
+.audio-El {
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.audio-wrapper-active {
+  opacity: 1;
+}

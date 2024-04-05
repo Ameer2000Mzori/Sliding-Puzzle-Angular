@@ -84,4 +84,10 @@ export class PuzzleComponent implements OnInit {
     clearInterval(this.timerRef);
     this.gameOver = true;
   }
+
+  // audio functions
+  isAudio: boolean = false;
+  openAudio() {
+    this.isAudio = !this.isAudio;
+  }
 }

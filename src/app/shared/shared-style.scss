@@ -64,12 +64,6 @@ nav {
   }
 }
 
-.audio-El {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-}
-
 .audio-El::-webkit-media-controls-panel {
   background-image: $backgroundColor;
   color: #a7a39c;

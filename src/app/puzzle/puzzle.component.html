@@ -18,10 +18,26 @@
       }
     </div>
   </div>
-  <div style="width: 300px">
-    <p style="width: 70%">Moves : {{ move }}</p>
-    <p style="width: 70%">seconds : {{ counter }}</p>
-    <p style="width: 70%">{{ date | date }}</p>
+
+  <div style="width: 360px">
+    <div class="audio-wrapper">
+      <a class="sharedTitles" (click)="openAudio()">{{
+        isAudio ? "Close" : "Audio"
+      }}</a>
+      <audio
+        [class.audio-wrapper-active]="isAudio"
+        class="audio-El"
+        src="../assets/background-theme.m4a"
+        controls
+        autoplay
+      ></audio>
+    </div>
+
+    <div style="width: 300px">
+      <p style="width: 70%">Moves : {{ move }}</p>
+      <p style="width: 70%">seconds : {{ counter }}</p>
+      <p style="width: 70%">{{ date | date }}</p>
+    </div>
   </div>
 
   <div>
@@ -39,12 +55,5 @@
     }
   </div>
 </div>
-
-<audio
-  class="audio-El"
-  src="../assets/background-theme.m4a"
-  controls
-  autoplay
-></audio>
 
 }
