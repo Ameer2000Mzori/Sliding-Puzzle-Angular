@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavUtilityComponent } from '../shared/nav-utility/nav-utility.component';
 import { RouterLink } from '@angular/router';
 import { DataService } from '../services/DataService';
-import { capitalizePipe } from '../services/custom-pipe.pipe';
+import { capitalizePipe } from '../pipes/custom-pipe.pipe';
 @Component({
   selector: 'app-puzzle',
   standalone: true,
