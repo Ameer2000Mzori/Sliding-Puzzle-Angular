@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 import { NavUtilityComponent } from '../shared/nav-utility/nav-utility.component';
 import { RouterLink } from '@angular/router';
 import { DataService } from '../services/DataService';
+import { capitalizePipe } from '../services/custom-pipe.pipe';
 @Component({
   selector: 'app-puzzle',
   standalone: true,
-  imports: [CommonModule, NavUtilityComponent, RouterLink],
   templateUrl: './puzzle.component.html',
   styleUrl: './puzzle.component.scss',
+  imports: [CommonModule, NavUtilityComponent, RouterLink, capitalizePipe],
 })
 export class PuzzleComponent implements OnInit {
   board: number[][] = [];
